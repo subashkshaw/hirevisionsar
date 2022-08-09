@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Futura;
+  font-style: normal;
+}
+#topCoverWrapper {
+  display: flex;
+  flex-direction: row;
+  background: #f5f5f5;
+  padding: 110px;
+}
+#topCoverWrapper h1 {
+  font-size: 80px;
+  color: #ffffff;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ff4f59;
+}
+#topCoverWrapper h3 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.2;
+  margin-top: 30px;
+}
+#topCoverWrapper p {
+  margin-top: 30px;
+  color: #394fbf;
+}
+.coverInfo {
+  margin: 5% auto;
+}
+.coverImage {
+  margin: 5% auto;
+}
+#ideaInfo {
+  display: flex;
+  flex-direction: row;
+  background: #2e293a;
+  color: #ffffff;
+  padding: 110px;
+}
+.ideaInfoImage {
+  margin: 5% auto;
+}
+#ideaInfo h3 {
+  color: #ffffff;
+  font-size: 35px;
+}
+#ideaInfo h4 {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.RightContent {
+  margin: 5% auto;
+}
+.RightContent p {
+  font-size: 15px;
+  line-height: 160.9%;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.RightContent h6 {
+  font-size: 15px;
+  font-weight: 100;
+}
+#features {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 110px;
+}
+.featuresInfo {
+  margin: 5% auto;
+}
+.featuresInfo p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #000;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+.featuresInfo h3 {
+  color: #000;
+  font-size: 35px;
+  text-align: center;
+}
+
+.featuresInfo2 img {
+  margin: 0 auto;
+}
+#featuresInfo h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 109.9%;
+  color: #2e293a;
+}
+#serviceWrapper {
+  display: block;
+  align-items: center;
+  text-align: center;
+  padding: 5%;
+  background: linear-gradient(90deg, #8d156c 0%, #141138 67.49%);
+}
+#serviceWrapper p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+#serviceWrapper h2 {
+  font-size: 35px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+#serviceWrapper .serviceCardWrapper {
+  margin: 5% auto;
+  align-items: center;
+  text-align: center;
+}
+#serviceWrapper .serviceCard {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5%;
+}
+#serviceWrapper .serviceCard .card {
+  margin: 10px;
+  flex: 33.5%;
+}
+#serviceWrapper .serviceCard .card img {
+  max-width: 100%;
+}
+#serviceWrapper .serviceCard .card-body {
+  position: relative;
+  bottom: 71px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #f1f1f1;
+  text-align: left;
+  line-height: 2;
+  padding: 10px;
+}
+#serviceWrapper .serviceCard .card-body h5 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+#serviceWrapper .serviceCard .card-body p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+#processSteps {
+  height: 650px;
+  padding: 110px;
+  background: #ffffff;
+}
+#processSteps .intro {
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+#processSteps .intro h3 {
+  font-size: 35px;
+  line-height: 1.2;
+  color: #5a5a5a;
+}
+
+#footerWrapper {
+  display: block;
+  background: #1e1e1e;
+  height: 110px;
+  align-items: center;
+  text-align: center;
+  line-height: 110px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 30.25px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  #topCoverWrapper {
+    flex-direction: column;
+  }
+  #ideaInfo {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #topCoverWrapper {
+    flex-direction: column;
+  }
+  #ideaInfo {
+    flex-direction: column;
+  }
+  #featuresInfo {
+    flex-direction: column;
+  }
+  .RightContent {
+    margin: 5%;
+  }
+  #serviceWrapper .serviceCard {
+    display: flex;
+    flex-direction: column;
+  }
+  #serviceWrapper .serviceCard .card {
+    width: 290px;
+    margin: 0 auto;
+  }
+}
+
+/* @media only screen and (min-width: 768px) {
+} */
+
+@media only screen and (min-width: 992px) {
+  #topCoverWrapper {
+    flex-direction: row;
+  }
+  .coverInfo {
+    margin: 5% auto;
+  }
+  #ideaInfo {
+    flex-direction: row;
+  }
+  #featuresInfo {
+    flex-direction: row;
+  }
+  .RightContent {
+    margin: 5% auto;
+  }
+  #serviceWrapper .serviceCard {
+    display: flex;
+    flex-direction: row;
+  }
+  #serviceWrapper .serviceCard .card {
+    margin: 10px;
+    width: 290px;
+  }
+}
+
+/* @media only screen and (min-width: 1200px) {
+} */
